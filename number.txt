@@ -1,0 +1,5 @@
+function addNumbers(number1: string, number2: number) {
+return number1 + number2;
+}
+var sum number = addNumbers(10,15)
+console.log('Sum of the two numbers is:' +sum

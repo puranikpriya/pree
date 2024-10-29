@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CDN LINK -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        h1{
+            text-align: center
+            color: coral;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="root">
+
+    </div>
+    <script type="text/babel">//compile the code javascript code babel
+
+        function Navigation()
+        {
+            return (
+
+                <nav>
+                    <ul>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>AboutUs</a></li>
+                        <li><a href='#'>ContactUs</a></li>
+                        
+                    </ul>    
+                </nav>
+            )
+        }
+        function HeaderComponent()
+        {
+          return( 
+            <div>
+                <h1>Welcome, to the World of React</h1>
+                <Navigation />
+            </div>
+            )
+        }
+
+        function MainComponent()
+        {
+          return( 
+             <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat fuga voluptas magni laudantium dolores porro laboriosam vel sapiente nobis libero commodi nisi necessitatibus, voluptatibus, beatae quos ducimus maiores doloribus.
+                </p>
+            )
+        }
+        function FooterComponent()
+        {
+          return( 
+             
+                    <h2> &copy;Companyname 2023-2024 </h2>
+            )
+        }
+function Section()
+{
+    return (
+        <div>
+                <HeaderComponent />
+                <MainComponent />
+                <FooterComponent />
+            </div>
+
+    )
+}
+// ReactDOM.render(which component to be rendered, where it needs to rendered)
+
+        ReactDOM.render(<Section />
+           
+        ,
+
+        document.getElementById('root')
+    
+    )
+
+    </script>
+    
+</body>
+</html>
